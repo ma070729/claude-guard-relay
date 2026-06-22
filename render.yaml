@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: claude-guard-relay
+    env: docker
+    region: singapore
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8080
