@@ -79,6 +79,7 @@ func NewPairingResponse(pairCode, errMsg string) Message {
 	msg := Message{
 		Type:     TypePairingResponse,
 		PairCode: pairCode,
+		Error:    "ok",
 	}
 	if errMsg != "" {
 		msg.Error = errMsg
